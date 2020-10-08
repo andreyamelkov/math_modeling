@@ -1,6 +1,7 @@
-print('Введите год')
-a= int(input())
-if(a % 4 == 0 or a % 400 ==0) and (a % 100 !==0 or a % 400 == 0):
-    print("Год високосный")
-else:
-    print("Год не високосный")
+
+a = int(input("a="))
+b = 0
+while a>0:
+    b = b*10 + a%10
+    a = a//10
+print(b)

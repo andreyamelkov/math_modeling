@@ -1,11 +1,13 @@
-print("Введите первый член г. прогрессии")
-a= int(input())
-print("Введите знаменатель г. прогрессии")
-b=int(input())
-print ("Количество членов г. прогрессии")
-c=int(input())
-c1=int(0)
-while c1<c:
-    a=a*b
-    c1=c1+1
-print(a)
+x=int(input("x="))
+y=int (input("y="))
+z=int (input("z="))
+
+if x+y<=z or x+z<=y or y+z<= x:
+     print("Треугольник не существует")
+elif x!=y and x!=z and y!=z :
+    print("Разносторонний")
+elif x==y==z:
+    print("Равносторонний")
+else:
+    print("Равнобедренный")
+    
